@@ -72,11 +72,12 @@
 					<h2> An Introducation to WebVR
 					</h2>
 					<p style="bottom: 0px; position: relative;">
-					<img src="./img/webvr.png" width="100%" height="100%" style="width:600px;height:400px;" />
+						<iframe data-src="http://www.createwebvr.com" width="100%" height="400" scrolling="yes" frameborder="0" marginwidth="0" marginheight="0"
+						style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
 						<small>
 								Zhong Wu / Senior Forge Developer Advocate
 							<br> @
-							<a href="http://forge.autodesk.com">
+							<a href="http://developer.autodesk.com">
 							Forge Partner Development, Autodesk
 							</a>
 						</small>
@@ -144,7 +145,7 @@
 						<h2>WebVR Headsets
 						</h2>
 						<p>
-							<img src="./img/webvrhardware.png" width="100%" height="100%" style="width:800px;height:400px;" />
+							<img src="./img/webvrhardware.png" style="width:800px;height:400px;" />
 							<br>
 								More to come
 						</p>
@@ -159,15 +160,321 @@
 						</p>
 					</section>
 					<section data-background="#4d7e65">
+						<h2>WebVR Spec
+						</h2>
+						<iframe data-src="https://w3c.github.io/webvr" width="100%" height="800" scrolling="yes" frameborder="0" marginwidth="0" marginheight="0"
+						style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+
+					</section>
+					<section data-background="#4d7e65">
 						<h2>Play with WebVR-Polyfill
 						</h2>
-						<iframe data-src="https://github.com/googlevr/webvr-polyfill" width="100%" height="800" frameborder="0" marginwidth="0" marginheight="0"
-						scrolling="no" style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+						<iframe data-src="https://github.com/googlevr/webvr-polyfill" width="100%" height="800" scrolling="yes" frameborder="0" marginwidth="0" marginheight="0"
+						style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+
+					</section>
+					<section>
+						<h2>Enjoy some WebVR Projects</h2>
+						<p>
+						<ul>
+							<li> 
+								<a href="http://player.elevr.com/">WebVR 360 Video</a>
+							</li>
+							<li>
+								<a href="https://cecropia.github.io/thehallaframe/#">VR Museum</a>
+							</li>
+							<li>
+								<a href="https://sketchfab.com/models/311d052a9f034ba8bce55a1a8296b6f9">Van gogh Room</a>
+							</li>
+							<li>
+								<a href="https://viewervr.herokuapp.com/">Forge Viewer</a>
+							</li>
+
+							<li>
+								<a href="http://vrlist.io/">Try More?</a>
+							</li>
+							
+						</ul>
+						</p>
+						
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>WebVR Framework</h2>
+					</section>
+					<section>
+						<h2>
+							Choose your weapon
+						</h2>
+						<table>
+							<!--<thead>
+								<tr>
+									<th>
+										<img width="178" height="238" data-src="./img/threejs.png">
+										
+									</th>
+								</tr>
+							</thead>-->
+							<tbody>
+								<tr>
+									<td>
+										<img width="178" height="238" data-src="./img/threejs.png">
+
+									</td>
+									<td>
+										<img width="178" height="238" data-src="./img/aframe.png">
+
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<img width="178" height="238" data-src="./img/reactvr.png">
+
+									</td>
+									<td>
+										<img width="178" height="238" data-src="./img/forge.jpg">
+
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h3> Three.js
+						</h3>
+						<iframe data-src="https://threejs.org/" width="100%" height="550" scrolling="yes" frameborder="0" marginwidth="0" marginheight="0"
+						style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+						
+					</section>
+					<section>
+						<h2>
+							Why ThreeJS 
+						</h2>
+						<p>
+							<ul>
+								<li>
+
+							Many standard building blocks already built out for you 
+								</li>
+								<li>
+							Fewer things to learn (need to learn JS anyways for web dev) 
+								</li>
+								<li>
+							Straight WebGL is much harder to debug 
+								</li>
+								<li>
+							Very large, well-documented, and thorough open source library 
+								</li>
+							</ul>
+						</p>
+					</section>
+					<section>
+						<h2>
+							Step 1: Make a Reality
+						</h2>
+						<p>
+					<pre><code class="hljs" data-trim contenteditable>
+// Create 3D objects. 
+var tetGeometry = new THREE.TetrahedronGeometry(1); 
+var tetMaterial = new THREE.MeshNormalMaterial(); 
+var tet = new THREE.Mesh(tetGeometry, tetMaterial); 
+
+// Position mesh 
+tet.position.set(2, controls.userHeight, -1); 
+
+// Add mesh to your three.js scene 
+scene.add(tet); 
+					</code></pre>
+
+
+						</p>
+
+					</section>
+					<section>
+						<h2>
+							Step 2: Add lighting
+						</h2>
+						<p>
+							<pre><code class="hljs" data-trim contenteditable>
+var light = new THREE.AmbientLight( 0x404040 ); 
+scene.add( light ); 
+var light2 = new THREE.PointLight( 0xffffff, 1, 100 ); 
+light2.intensity = 1; 
+scene.add( light2 ); 
+var light3 = new THREE.DirectionalLight( 0xffffff ); 
+light3.position.set( 0, 1, 1 ).normalize(); 
+scene.add(light3); 
+					</code>
+					</pre>
+						</p>
+
+					</section>
+					<section>
+						<h2>
+							Step 3: Use Loops and Arrays 
+						</h2>
+						<p>
+							<pre><code class="hljs" data-trim contenteditable>
+// create Five Intersecting Tetrahedra:
+var tetGeometry = new THREE.TetrahedronGeometry(1);
+var tet = new Array(5);
+var fit = new THREE.Object3D();
+var t = ((1 + Math.sqrt(5))/2);
+var fturn = 6.283/5;
+var axis = new THREE.Vector3( t, 1, 0 );
+axis.normalize();
+for(var i = 0; i < 5; i++) {
+     tet[i] = new THREE.Mesh(tetGeometry, new THREE.MeshLambertMaterial());
+     tet[i].rotateOnAxis(axis, i*fturn);
+     fit.add(tet[i]);
+}
+fit.position.set(-2, controls.userHeight+1, -2);
+scene.add(fit);
+
+					</code>
+					</pre>
+						</p>
+
+					</section>					
+					<section>
+						<h2>
+							Step 4: Add some images 
+						</h2>
+						<p>
+							<pre><code class="hljs" data-trim contenteditable>
+// Tip: Use a spherical camera or your phone to capture a spherical photo
+// Add an equirectangular panorama
+var pano;
+var loader = new THREE.TextureLoader();
+loader.load('Greeley_pan_small_stars.jpg', onTextureLoaded);
+function onTextureLoaded(texture) {
+  var geometry = new THREE.SphereGeometry(1000, 32, 32);
+  var material = new THREE.MeshBasicMaterial({
+    map: texture,
+    side: THREE.BackSide
+  });
+  pano = new THREE.Mesh(geometry, material);
+  pano.position.y = 190;
+  scene.add(pano);
+}
+					</code>
+					</pre>
+						</p>
+
+					</section>
+					<section>
+						<h2>
+							Step 5: Animate Your Reality 
+						</h2>
+						<p>
+							<pre><code class="hljs" data-trim contenteditable>
+
+var lastRender = 0
+function animate (timestamp) {
+  var delta = Math.min(timestamp - lastRender, 500)
+  lastRender = timestamp
+  // Apply rotation
+  fit.rotation.y += delta * 0.0003
+  fit.rotation.x += delta * 0.00005
+  // Update VR headset position and apply to camera.
+  controls.update()
+  // Render the scene through the manager
+  manager.render(scene, camera, timestamp)
+  requestAnimationFrame(animate)
+}
+					</code>
+					</pre>
+						</p>
 
 					</section>
 
+					<section>
+						<h2>
+							Step 5: Interact with Your Reality  
+						</h2>
+						<p>
+							<pre><code class="hljs" data-trim contenteditable>
+window.addEventListener('keydown', onkey, true)
+function onkey(event) {
+  event.preventDefault()
+  if (event.keyCode == 32) {
+    // space bar
+    isRotation = !isRotation
+  }
+}
+
+document.body.addEventListener('click', onClick)
+function onClick(event) {
+  isRotation = !isRotation
+}
+var lastRender = 0
+var isRotation
+function animate (timestamp) {
+  ...
+  if (isRotation) {
+    // Apply rotation
+    fit.rotation.y += delta * 0.0003
+    fit.rotation.x += delta * 0.00005
+  }
+  ...
+}
+		</code>
+					</pre>
+						</p>
+
+					</section>
+
+
 				</section>
-				<section>Slide 2</section>
+				<section>
+					<section>
+						<h3>
+							React VR: Powered by Facebook
+						</h3>
+						<iframe data-src="https://facebook.github.io/react-vr/index.html" width="100%" height="550" scrolling="yes" frameborder="0" marginwidth="0" marginheight="0"
+						style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+
+					</section>
+					<section>
+						<h3>
+							Build on components
+						</h3>
+						<p>
+							<img src="./img/reactvrcode.png" width="800" height="550" scrolling=true  />
+							<br>
+								More to come
+						</p>
+
+
+					</section>
+				</section>
+				<section>
+					<section>
+						<h3>
+							Forge Viewer: Powered by Autodesk
+						</h3>
+						<iframe data-src="http://lmv.rocks/" width="100%" height="550" scrolling="yes" frameborder="0" marginwidth="0" marginheight="0"
+						 style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+						
+					</section>
+					<section>
+						<iframe data-src="https://viewervr.herokuapp.com" width="100%" height="700" scrolling="yes" frameborder="0" marginwidth="0" marginheight="0"
+						 style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+						
+					</section>
+				</section>
+				<section>
+					<h2> Resource
+					</h2>
+				</section>
+				<section>
+					<h1> Thanks
+					</h1>
+				</section>
+				
 			</div>
 		</div>
 

@@ -244,21 +244,18 @@
 						</h3>
 						<p>
 					<pre><code class="hljs" data-trim contenteditable>
-// Create 3D objects. 
-var tetGeometry = new THREE.TetrahedronGeometry(1); 
-var tetMaterial = new THREE.MeshNormalMaterial(); 
-var tet = new THREE.Mesh(tetGeometry, tetMaterial); 
+// Create 3D objects.
+var geometry = new THREE.BoxGeometry(0.5, 0.5, 0.5);
+var material = new THREE.MeshNormalMaterial();
+cube = new THREE.Mesh(geometry, material);
 
-// Position mesh 
-tet.position.set(2, controls.userHeight, -1); 
+// Position cube mesh to be right in front of you.
+cube.position.set(0, controls.userHeight, -1);
 
-// Add mesh to your three.js scene 
-scene.add(tet); 
+// Add cube mesh to your three.js scene
+scene.add(cube);
 					</code></pre>
-
-
 						</p>
-
 					</section>
 					<section>
 						<h3>
@@ -281,29 +278,7 @@ scene.add(light3);
 					</section>
 					<section>
 						<h3>
-							Step 3: Add geometry 
-						</h3>
-						<p>
-							<pre><code class="hljs" data-trim contenteditable>
-// Create 3D objects.
-var geometry = new THREE.BoxGeometry(0.5, 0.5, 0.5);
-var material = new THREE.MeshNormalMaterial();
-cube = new THREE.Mesh(geometry, material);
-
-// Position cube mesh to be right in front of you.
-cube.position.set(0, controls.userHeight, -1);
-
-// Add cube mesh to your three.js scene
-scene.add(cube);
-
-					</code>
-					</pre>
-						</p>
-
-					</section>					
-					<section>
-						<h3>
-							Step 4: Add some images 
+							Step 3: Add some images 
 						</h3>
 						<p>
 							<pre><code class="hljs" data-trim contenteditable>
@@ -329,7 +304,7 @@ function onTextureLoaded(texture) {
 					</section>
 					<section>
 						<h3>
-							Step 5: Animate Your Reality 
+							Step 4: Animate Your Reality 
 						</h3>
 						<p>
 							<pre><code class="hljs" data-trim contenteditable>
@@ -355,7 +330,7 @@ function animate (timestamp) {
 
 					<section>
 						<h3>
-							Step 6: Interact with Your Reality  
+							Step 5: Interact with Your Reality  
 						</h3>
 						<p>
 							<pre><code class="hljs" data-trim contenteditable>
@@ -408,21 +383,11 @@ function animate (timestamp) {
 						<h3>
 							React VR: Powered by Facebook
 						</h3>
-						<iframe data-src="https://facebook.github.io/react-vr/index.html" width="100%" height="550" scrolling="yes" frameborder="0" marginwidth="0" marginheight="0"
-						style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
-
-					</section>
-					<section>
-						<h3>
-							React Family
-						</h3>
-						<p>
 							<small>
 							React VR > React Runtime > OVRUI > Three.js > WebVR & Browser
 							</small>
-							<img src="./img/reactvrcode.png" width="800" height="500" scrolling=true  />
-						</p>
-
+						<iframe data-src="https://facebook.github.io/react-vr/index.html" width="100%" height="550" scrolling="yes" frameborder="0" marginwidth="0" marginheight="0"
+						style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
 
 					</section>
 					<section>

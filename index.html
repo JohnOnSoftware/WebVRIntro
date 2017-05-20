@@ -25,7 +25,7 @@
 		<div class="reveal">
 			<div class="slides">
 				<section id="themes">
-					<h2>Select Themes</h2>
+					<h3>Select Themes</h3>
 					<p>
 						<ul>
 							<li>
@@ -86,36 +86,47 @@
 				<section data-background="./img/john.jpg">
 						<div style="background-color: rgba(0, 0, 1, 0.5); color: #fff; padding: 30px;">
 
-							<h2>Who am I?</h2>
+							<h3>Who am I?</h3>
+							<p>
 							<ul>
 								<li>
-									Graduated from HUST in 2006
+									Coder? or Evangelist? 
+							</li>
+								<li>
+									Experiences with C++, .NET, Javascript, ES6, Python, etc.  
 								</li>
 								<li>
-									Software engineer in Autodesk
+									Love music, travel, and also enjoy staying at home with 2 kids 
 								</li>
-								<li>
-									Forge Evangelist in FPD/ADN team
-								</li>
-
 							</ul>
+							</p>
 						</div>
 				</section>
 
 				<section>
 					<section>
+						<h2>
+							Evolve of VR/AR/MR
+						</h2>
+						<p>
+							<img src="./img/vr.png" style="width:600;height:450;" />
+							<br>
+							Image more ...
+
+						</p>					
+					</section>
+					<section>
 						<h2 >
-							A gentle introduction to WebVR  
+							What is WebVR  
 						</h2>
+						<p>
+							<img src="./img/getting-started-with-webvr.jpg" style="width:100%;height:400px;" />
+						</p>					
+						
 					</section>
 					<section>
 						<h2>
-							Evolve of Web
-						</h2>
-					</section>
-					<section>
-						<h2>
-							Why Make WebVR?
+							Why WebVR?
 						</h2>
 						<table>
 							<thead>
@@ -147,7 +158,7 @@
 						<p>
 							<img src="./img/webvrhardware.png" style="width:800px;height:400px;" />
 							<br>
-								More to come
+								More to come ...
 						</p>
 					</section>
 					<section data-background="#4d7e65">
@@ -156,7 +167,7 @@
 						<p>
 							<img src="./img/webbrowser.png" width="100%" height="100%"  />
 							<br>
-								More to come
+								More to come ...
 						</p>
 					</section>
 					<section data-background="#4d7e65">
@@ -173,11 +184,12 @@
 						style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
 
 					</section>
-					<section>
-						<h2>Enjoy some WebVR Projects</h2>
-						<p>
+				</section>
+				<section>
+					<h2>Enjoy some WebVR Projects</h2>
+					<p>
 						<ul>
-							<li> 
+							<li>
 								<a href="http://player.elevr.com/">WebVR 360 Video</a>
 							</li>
 							<li>
@@ -193,53 +205,15 @@
 							<li>
 								<a href="http://vrlist.io/">Try More?</a>
 							</li>
-							
+
 						</ul>
-						</p>
-						
-					</section>
+					</p>
+
 				</section>
 				<section>
-					<section>
-						<h2>WebVR Framework</h2>
-					</section>
-					<section>
-						<h2>
-							Choose your weapon
-						</h2>
-						<table>
-							<!--<thead>
-								<tr>
-									<th>
-										<img width="178" height="238" data-src="./img/threejs.png">
-										
-									</th>
-								</tr>
-							</thead>-->
-							<tbody>
-								<tr>
-									<td>
-										<img width="178" height="238" data-src="./img/threejs.png">
-
-									</td>
-									<td>
-										<img width="178" height="238" data-src="./img/aframe.png">
-
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<img width="178" height="238" data-src="./img/reactvr.png">
-
-									</td>
-									<td>
-										<img width="178" height="238" data-src="./img/forge.jpg">
-
-									</td>
-								</tr>
-							</tbody>
-						</table>
-					</section>
+					<h3>Choose Your Weapon: Framework</h3>
+					<img src="./img/webvrframeworks.png" style="width:100%;height:100%;" />
+					
 				</section>
 				<section>
 					<section>
@@ -250,9 +224,9 @@
 						
 					</section>
 					<section>
-						<h2>
+						<h3>
 							Why ThreeJS 
-						</h2>
+						</h3>
 						<p>
 							<ul>
 								<li>
@@ -272,9 +246,9 @@
 						</p>
 					</section>
 					<section>
-						<h2>
+						<h3>
 							Step 1: Make a Reality
-						</h2>
+						</h3>
 						<p>
 					<pre><code class="hljs" data-trim contenteditable>
 // Create 3D objects. 
@@ -294,9 +268,9 @@ scene.add(tet);
 
 					</section>
 					<section>
-						<h2>
+						<h3>
 							Step 2: Add lighting
-						</h2>
+						</h3>
 						<p>
 							<pre><code class="hljs" data-trim contenteditable>
 var light = new THREE.AmbientLight( 0x404040 ); 
@@ -313,9 +287,9 @@ scene.add(light3);
 
 					</section>
 					<section>
-						<h2>
+						<h3>
 							Step 3: Use Loops and Arrays 
-						</h2>
+						</h3>
 						<p>
 							<pre><code class="hljs" data-trim contenteditable>
 // create Five Intersecting Tetrahedra:
@@ -340,9 +314,9 @@ scene.add(fit);
 
 					</section>					
 					<section>
-						<h2>
+						<h3>
 							Step 4: Add some images 
-						</h2>
+						</h3>
 						<p>
 							<pre><code class="hljs" data-trim contenteditable>
 // Tip: Use a spherical camera or your phone to capture a spherical photo
@@ -366,9 +340,9 @@ function onTextureLoaded(texture) {
 
 					</section>
 					<section>
-						<h2>
+						<h3>
 							Step 5: Animate Your Reality 
-						</h2>
+						</h3>
 						<p>
 							<pre><code class="hljs" data-trim contenteditable>
 
@@ -392,9 +366,9 @@ function animate (timestamp) {
 					</section>
 
 					<section>
-						<h2>
-							Step 5: Interact with Your Reality  
-						</h2>
+						<h3>
+							Step 6: Interact with Your Reality  
+						</h3>
 						<p>
 							<pre><code class="hljs" data-trim contenteditable>
 window.addEventListener('keydown', onkey, true)
@@ -426,8 +400,11 @@ function animate (timestamp) {
 						</p>
 
 					</section>
-
-
+					<section>
+						<h2>
+							DEMO
+						</h2>
+					</section>
 				</section>
 				<section>
 					<section>
@@ -440,15 +417,73 @@ function animate (timestamp) {
 					</section>
 					<section>
 						<h3>
-							Build on components
+							React Family
 						</h3>
 						<p>
-							<img src="./img/reactvrcode.png" width="800" height="550" scrolling=true  />
-							<br>
-								More to come
+							<small>
+							React VR > React Runtime > OVRUI > Three.js > WebVR & Browser
+							</small>
+							<img src="./img/reactvrcode.png" width="800" height="500" scrolling=true  />
 						</p>
 
 
+					</section>
+					<section>
+						<h3>
+							Basic steps for a ReactVR App 
+						</h3>
+						<p>
+							<ol>
+								<li>
+									Install Node.js, NPM
+								</li>
+								<Li>
+									Compatible VR Web Browser
+								</Li>
+								<li>
+									npm install -g react-vr-cli
+								</li>
+								<li>
+									react-vr init MyReactVRSample
+								</li>
+								<li>
+									npm start
+								</li>
+								<li>
+									Open your browser at <a href="http://localhost:8081/vr"> http://localhost:8081/vr </a> 
+								</li>
+							</ol>
+						</p>
+					</section>
+					<section>
+						<h3>
+							Directory Structure
+						</h3>
+					<pre><code class="hljs" data-trim contenteditable>
++-node_modules
++-static_assets
++-vr
+-.gitignore
+-.flowconfig
+-.watchmanconfig
+-index.vr.js
+-package.json
+-rn-cli-config.js
+					</code></pre>
+						</p>
+
+					</section>
+					<section>
+						<h3>
+							A more interesting sample
+						</h3>
+						<iframe data-src="https://myreactvrpro.herokuapp.com" width="100%" height="550" scrolling="yes" frameborder="0" marginwidth="0" marginheight="0"
+						 style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+					</section>
+					<section>
+						<h2>
+							Code behind the scene
+						</h2>
 					</section>
 				</section>
 				<section>
@@ -461,14 +496,126 @@ function animate (timestamp) {
 						
 					</section>
 					<section>
+						<h3>
+							Workflow with Autodesk Forge
+						</h3>
+							<img src="./img/api_basics.png" style="width:100%;height:100%;" />
+						
+					</section>
+					<section>
+							<h3>Over 60 different file formats </h3>
+							<img src="./img/md.png" style="width:100%;height:100%;" />
+					</section>
+					<section>
+						<h3>
+							Viewer VR code
+						</h3>
+					<pre><code class="hljs" data-trim contenteditable>
+
+  <link rel="stylesheet" href="https://developer.api.autodesk.com/viewingservice/v1/viewers/style.min.css?v=2.13" type="text/css">
+
+  <script src="https://developer.api.autodesk.com/viewingservice/v1/viewers/three.js?v=2.13"></script>
+  <script src="https://developer.api.autodesk.com/viewingservice/v1/viewers/viewer3D.js?v=2.13"></script>
+
+  <div id="MyViewerDiv"></div>
+					</code></pre>
+					<pre><code class="hljs" data-trim contenteditable>
+
+var myViewerDiv = document.getElementById('MyViewerDiv');
+var viewer = new Autodesk.Viewing.Private.GuiViewer3D(myViewerDiv);
+var options = {
+	'env' : 'Local',
+	'document' : './shaver/0.svf'
+};
+Autodesk.Viewing.Initializer(options, function() {
+viewer.initialize();
+viewer.loadModel(options.document, options);
+viewer.loadExtension('Autodesk.Viewing.WebVR');
+});
+
+						</code></pre>
+					</section>
+					<section>
 						<iframe data-src="https://viewervr.herokuapp.com" width="100%" height="700" scrolling="yes" frameborder="0" marginwidth="0" marginheight="0"
 						 style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
 						
 					</section>
+					<section>
+						<h2>
+							Demo
+						</h2>
+					</section>
 				</section>
 				<section>
-					<h2> Resource
-					</h2>
+					<section>
+						<h2>
+							Don't want code?
+						</h2>
+					</section>
+					<section>
+						<h3>
+							vizor
+						</h3>
+						<iframe data-src="https://vizor.io/" width="100%" height="550" scrolling="yes" frameborder="0" marginwidth="0" marginheight="0"
+						 style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+					</section>
+					<section>
+						<h3>
+							ThreeJS Editor
+						</h3>
+						<iframe data-src="https://threejs.org/editor/" width="100%" height="550" scrolling="yes" frameborder="0" marginwidth="0" marginheight="0"
+						 style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+					</section>
+					<section>
+						<h3>
+							Autodesk Play
+						</h3>
+						<iframe data-src="https://play.autodesk.com" width="100%" height="550" scrolling="yes" frameborder="0" marginwidth="0" marginheight="0"
+						 style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+					</section>
+					<section>
+						<h3>
+							Sketchfab Editor
+						</h3>
+						<iframe data-src="https://help.sketchfab.com/hc/en-us/articles/211640363-VR-Editor/" width="100%" height="550" scrolling="yes" frameborder="0" marginwidth="0" marginheight="0"
+						 style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+					</section>
+					<section>
+						<h3>
+							SocialVR
+						</h3>
+						<iframe data-src="http://cmuartfab.github.io/social-vr/#/editor" width="100%" height="550" scrolling="yes" frameborder="0" marginwidth="0" marginheight="0"
+						 style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+					</section>
+				</section>
+				<section>
+					<h3> Resource
+					</h3>
+					<p>
+						<ul>
+							<li>
+								WebVR Info:   <a href="https://webvr.info" >https://webvr.info </a>
+							</li>
+							<li>
+								Create WebVR: <a href="https://createwebvr.com" >https://createwebvr.com </a>
+							</li>
+							<li>
+								WebVR Rocks:  <a href="https://webvr.rocks/">https://webvr.rocks</a>
+							</li>
+							<li>
+								ThreeJS:      <a href="https://threejs.org">https://threejs.org</a>
+							</li>
+							<li>
+								React VR:     <a href="https://facebook.github.io/react-vr/index.html" >https://facebook.github.io/react-vr/ </a>
+							</li>
+							<li>
+								Autodesk Forge Viewer: <a href="https://developer.autodesk.com" >https://developer.autodesk.com </a>
+							</li>
+							<li>
+								WebVR Slack  @<a href="https://webvr.slack.com" >https://webvr.slack.com</a>
+							</li>
+						</ul>
+					</p>
 				</section>
 				<section>
 					<h1> Thanks

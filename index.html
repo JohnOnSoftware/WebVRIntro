@@ -281,25 +281,20 @@ scene.add(light3);
 					</section>
 					<section>
 						<h3>
-							Step 3: Use Loops and Arrays 
+							Step 3: Add geometry 
 						</h3>
 						<p>
 							<pre><code class="hljs" data-trim contenteditable>
-// create Five Intersecting Tetrahedra:
-var tetGeometry = new THREE.TetrahedronGeometry(1);
-var tet = new Array(5);
-var fit = new THREE.Object3D();
-var t = ((1 + Math.sqrt(5))/2);
-var fturn = 6.283/5;
-var axis = new THREE.Vector3( t, 1, 0 );
-axis.normalize();
-for(var i = 0; i < 5; i++) {
-     tet[i] = new THREE.Mesh(tetGeometry, new THREE.MeshLambertMaterial());
-     tet[i].rotateOnAxis(axis, i*fturn);
-     fit.add(tet[i]);
-}
-fit.position.set(-2, controls.userHeight+1, -2);
-scene.add(fit);
+// Create 3D objects.
+var geometry = new THREE.BoxGeometry(0.5, 0.5, 0.5);
+var material = new THREE.MeshNormalMaterial();
+cube = new THREE.Mesh(geometry, material);
+
+// Position cube mesh to be right in front of you.
+cube.position.set(0, controls.userHeight, -1);
+
+// Add cube mesh to your three.js scene
+scene.add(cube);
 
 					</code>
 					</pre>
@@ -396,6 +391,13 @@ function animate (timestamp) {
 					<section>
 						<h3>
 							DEMO
+						</h3>
+						<iframe data-src="https://webvrdemo.herokuapp.com/" width="100%" height="550" scrolling="yes" frameborder="0" marginwidth="0" marginheight="0"
+						style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>		
+					</section>
+					<section>
+						<h3>
+							More samples
 						</h3>
 						<iframe data-src="https://threejs.org/examples/#webvr_cubes" width="100%" height="550" scrolling="yes" frameborder="0" marginwidth="0" marginheight="0"
 						style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>		

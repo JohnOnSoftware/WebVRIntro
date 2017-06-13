@@ -1,0 +1,874 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section id="themes">
+					<h3>Select Themes</h3>
+					<p>
+						<ul>
+							<li>
+								<!-- Hacks to swap themes after the page has loaded. Not flexible and only intended for the reveal.js demo deck. -->
+								<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/black.css'); return false;">Black (default)</a><br>
+							</li>
+							<li>
+								<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/white.css'); return false;">White</a>
+							</li>
+							<li>
+								<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/league.css'); return false;">League</a>
+							</li>
+							<li>
+								<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/sky.css'); return false;">Sky</a>
+							</li>
+							<li>
+								<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/beige.css'); return false;">Beige</a>
+							</li>
+							<li>
+								<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/simple.css'); return false;">Simple</a>								
+								<br>
+							</li>
+							<li>
+								<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/serif.css'); return false;">Serif</a>	
+							</li>
+							<li>
+								<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/blood.css'); return false;">Blood</a>						
+							</li>
+							<li>
+								<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/night.css'); return false;">Night</a>						
+							</li>
+							<li>
+								<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/moon.css'); return false;">Moon</a>
+							</li>
+							<li>
+								<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/solarized.css'); return false;">Solarized</a>
+							</li>
+					
+					</ul>
+					</p>
+				</section>
+
+				<section>
+					<h3> VR/AR/MR 的发展以及我们的机会
+					</h3>
+					<p style="bottom: 0px; position: relative;">
+						<img src="./img/matrix.jpg" style="width:800;height:400px;" />
+						
+						<small>
+								吴忠 / Autodesk 全球资深开发顾问
+							<br> @
+							<a href="http://developer.autodesk.com">
+							Forge Partner Development, Autodesk
+							</a>
+						</small>
+					</p>
+				</section>
+				<section>
+					<section>
+						<h3>
+							关于 Autodesk 以及 ADN
+						</h3>
+						<iframe data-src="https://www.autodesk.com.cn/adsk/servlet/index?id=10378032&siteID=1170359" width="100%" height="800px"
+						 scrolling="yes" frameborder="0" marginwidth="0" marginheight="0" style="border:3px solid #666; margin-bottom:5px; max-width: 100%;"
+						 allowfullscreen> </iframe>
+
+					</section>
+					<section>
+						<h3>
+							Autodesk Forge
+						</h3>
+						<iframe data-src="https://developer.autodesk.com" width="100%" height="800px"
+						 scrolling="yes" frameborder="0" marginwidth="0" marginheight="0" style="border:3px solid #666; margin-bottom:5px; max-width: 100%;"
+						 allowfullscreen> </iframe>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h3>
+							虚拟 VS 现实
+						</h3>
+						<p>
+							什么是"现实"？你如何定义"现实"。如果说是你看到的，听到的，摸到的及感受到的一切，那么"现实"不过是大脑传递给你的电子信号。
+							<br>
+							<br> --- 《黑客帝国》墨菲斯
+						</p>
+					</section>
+					<section>
+						<h3>
+							创建"虚拟"的"现实"
+						</h3>
+						<img src="./img/vr2.png" style="width:100%;height:100%;" />
+						
+					</section>
+					<section>
+						<h3>
+							虚拟 VS 现实
+						</h3>
+						<img src="./img/vr1.png" style="width:100%;height:100%;" />
+					</section>
+					<section>
+						<img src="./img/term.png" style="width:100%;height:100%;" />
+					</section>
+					<section>
+						<h2>
+							VR/AR/MR 的发展
+						</h2>
+						<p>
+							<img src="./img/vr.png" style="width:100%;height:500px;" />
+							<br>
+							Image more ...
+
+						</p>					
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h3>
+							"虚拟现实" 的发展
+						</h3>
+						<table>
+							<thead>
+								<tr>
+									<th><img src="./img/vr3.png" style="width:100%;height:500px;" /></th>
+									<th><img src="./img/vr4.png" style="width:100%;height:500px;" /></th>
+								</tr>
+							</thead>
+						</table>
+					</section>
+
+					<section>
+						<h3>
+							驱动力1：用户需求升级
+						</h3>
+						<img src="./img/vr5.png" style="width:100%;height:100%;" />
+
+					</section>
+					<section>
+						<h3>
+							驱动力2：技术能力升级
+						</h3>
+						<img src="./img/vr10.png" style="width:100%;height:100%;" />
+						
+					</section>
+
+					<section>
+						<h3>
+							驱动力3：多方资本入局
+						</h3>
+						<table>
+							<thead>
+								<tr>
+									<th><img src="./img/vr6.png" style="width:100%;height:400px;" /></th>
+									<th><img src="./img/vr7.png" style="width:100%;height:400px;" /></th>
+								</tr>
+							</thead>
+						</table>
+						
+					</section>
+					<section>
+						<h3>
+							驱动力3：多方资本入局
+						</h3>
+						<table>
+							<thead>
+								<tr>
+									<th><img src="./img/vr8.png" style="width:100%;height:300px;" /></th>
+									<th><img src="./img/vr9.png" style="width:100%;height:300px;" /></th>
+								</tr>
+							</thead>
+						</table>
+						
+					</section>
+
+				</section>
+
+				<section>
+					<section>
+						<h2>
+							虚拟现实产业链
+						</h2>
+					</section>
+					<section>
+						<img src="./img/vr11.png" style="width:100%;height:650px;" />
+					</section>
+					<section>
+						<h3>
+							显示设备
+						</h3>
+						<img src="./img/vr12.png" style="width:70%;height:550px;" scrolling="yes" />
+					</section>
+					<section>
+						<h3>
+							拍摄设备
+						</h3>
+						<img src="./img/vr13.png" style="width:30%;height:550px;" />
+					</section>
+					<section>
+						<h3>
+							输入/反馈设备
+						</h3>
+						<img src="./img/vr14.png" style="width:100%;height:450px;" />
+					</section>
+					<section>
+						<h3>
+							配套软件
+						</h3>
+						<img src="./img/vr15.png" style="width:100%;height:100%;" />
+					</section>
+					<section>
+						<h3>
+							内容制作/行业应用
+						</h3>
+						<img src="./img/vr16.png" style="width:70%;height:550px;" />
+					</section>
+					<section>
+						<h3>
+							巨头布局
+						</h3>
+						<img src="./img/vr17.png" style="width:70%;height:550px;" />
+					</section>
+
+				</section>
+
+				<section>
+					<section>
+						<h2>
+							打造 VR 应用
+						</h2> 
+
+					</section>
+					<section>
+						<h3>
+							基于游戏引擎的 VR 技术
+						</h3> 
+						<img src="./img/vr18.png" style="width:100%;height:550px;" />
+					</section>
+					<section>
+						<h3>
+							Autodesk Stingray 
+						</h3> 
+						<iframe data-src="https://www.autodesk.com/products/stingray" width="100%" height="550" scrolling="yes" frameborder="0" marginwidth="0" marginheight="0"
+						 style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+						<aside class="notes">
+							talk about Stingray
+						</aside>
+					</section>
+
+					<section>
+						<h3>
+							Live 
+						</h3> 
+						<iframe data-src="https://www.autodesk.com/products/live" width="100%" height="550" scrolling="yes" frameborder="0" marginwidth="0" marginheight="0"
+						 style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+						<aside class="notes">
+							talk about Stingray
+						</aside>
+					</section>
+					<section>
+						<h3>
+							基于浏览器的 WebVR 技术 
+						</h3> 
+						<iframe data-src="https://www.createwebvr.com" width="100%" height="500px" scrolling="yes" frameborder="0" marginwidth="0" marginheight="0"
+						style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+						<aside class="notes">
+						</aside>
+
+					</section>
+					<section>
+						<h2>案例</h2>
+						<p>
+							<ul>
+								<li>
+									<a href="http://player.elevr.com/">WebVR 360 Video</a>
+								</li>
+								<li>
+									<a href="https://cecropia.github.io/thehallaframe/#">VR Museum</a>
+								</li>
+								<li>
+									<a href="https://sketchfab.com/models/311d052a9f034ba8bce55a1a8296b6f9">Van gogh Room</a>
+								</li>
+								<li>
+									<a href="https://viewervr.herokuapp.com/">Forge Viewer</a>
+								</li>
+
+								<li>
+									更多案例 <a href="http://vrlist.io/">http://vrlist.io</a>
+								</li>
+
+							</ul>
+						</p>
+
+					</section>
+					<section>
+						<h3>
+							可视化创建工具：SocialVR
+						</h3>
+						<iframe data-src="http://cmuartfab.github.io/social-vr/#/editor" width="100%" height="550" scrolling="yes" frameborder="0" marginwidth="0" marginheight="0"
+						 style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+					</section>
+					<section>
+						<h3>
+							可视化创建工具：Autodesk Play
+						</h3>
+						<iframe data-src="https://play.autodesk.com" width="100%" height="550" scrolling="yes" frameborder="0" marginwidth="0" marginheight="0"
+						 style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+					</section>
+
+
+				</section>
+				<section>
+					<section>
+						<h2>
+							打造 AR/MR 应用
+						</h2> 
+					</section>
+					<section>
+						<h3>
+							Hololens
+						</h3>
+						<iframe data-src="https://www.microsoft.com/en-us/hololens" width="100%" height="550" scrolling="yes" frameborder="0" marginwidth="0" marginheight="0"
+						 style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+					</section>
+					<section>
+						<h3>
+							HoloLens
+						</h3> 
+						<p>
+							<ul>
+								<li>HoloLens 是首个广泛使用的 AR 设备
+							开发者版本目前在 US & Canada 销售
+							即将在 France, Germany, UK, 
+							Ireland, Australia, NZ 销售
+								</li>
+								<li />
+								<li>
+							同时提供原生开发(Direct3D) 和游戏引擎支持(Unity3D)
+							Unity 使用流行的 C#
+							</li>
+							</ul>
+						</p>
+					</section>
+				</section>				
+				<section>
+					<section>
+						<h2>
+							Evolve of VR/AR/MR
+						</h2>
+						<p>
+							<img src="./img/vr.png" style="width:100%;height:500px;" />
+							<br>
+							Image more ...
+
+						</p>					
+					</section>
+					<section>
+						<h2 >
+							What is WebVR  
+						</h2>
+						<p>
+							<img src="./img/getting-started-with-webvr.jpg" style="width:100%;height:400px;" />
+						</p>					
+						
+					</section>
+					<section>
+						<h2>
+							Why WebVR?
+						</h2>
+						<table>
+							<thead>
+								<tr>
+									<th>Pros</th>
+									<th>Cons</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Hardware Agnostic</td>
+									<td>Lag</td>
+								</tr>
+								<tr>
+									<td>Easy for Users</td>
+									<td>Development Stack</td>
+								</tr>
+								<tr>
+									<td>Open, Accessible, and Linked</td>
+									<td>Under Development</td>
+								</tr>
+							</tbody>
+						</table>
+
+					</section>
+					<section data-background="#4d7e65">
+						<h2>WebVR Headsets
+						</h2>
+						<p>
+							<img src="./img/webvrhardware.png" style="width:800px;height:400px;" />
+							<br>
+								More to come ...
+						</p>
+					</section>
+					<section data-background="#4d7e65">
+						<h2>Supported Browser
+						</h2>
+						<p>
+							<img src="./img/webbrowser.png" width="100%" height="100%"  />
+							<br>
+								More to come ...
+						</p>
+					</section>
+					<section data-background="#4d7e65">
+						<h2>WebVR Spec
+						</h2>
+						<iframe data-src="https://w3c.github.io/webvr" width="100%" height="800" scrolling="yes" frameborder="0" marginwidth="0" marginheight="0"
+						style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+
+					</section>
+				</section>
+				<section>
+					<h2>Let's enjoy</h2>
+					<p>
+						<ul>
+							<li>
+								<a href="http://player.elevr.com/">WebVR 360 Video</a>
+							</li>
+							<li>
+								<a href="https://cecropia.github.io/thehallaframe/#">VR Museum</a>
+							</li>
+							<li>
+								<a href="https://sketchfab.com/models/311d052a9f034ba8bce55a1a8296b6f9">Van gogh Room</a>
+							</li>
+							<li>
+								<a href="https://viewervr.herokuapp.com/">Forge Viewer</a>
+							</li>
+
+							<li>
+								Try more at <a href="http://vrlist.io/">http://vrlist.io</a>
+							</li>
+
+						</ul>
+					</p>
+
+				</section>
+				<section>
+					<h3>Choose Your Weapon: Framework</h3>
+					<img src="./img/webvrframeworks.png" style="width:100%;height:100%;" />
+					
+				</section>
+				<section>
+					<section>
+						<h3> Three.js
+						</h3>
+						<iframe data-src="https://threejs.org/" width="100%" height="550" scrolling="yes" frameborder="0" marginwidth="0" marginheight="0"
+						style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+						
+					</section>
+					<section>
+						<h3>
+							Why ThreeJS 
+						</h3>
+						<p>
+							<ul>
+								<li>
+
+							Many standard building blocks already built out for you 
+								</li>
+								<li>
+							Fewer things to learn (need to learn JS anyways for web dev) 
+								</li>
+								<li>
+							Straight WebGL is much harder to debug 
+								</li>
+								<li>
+							Very large, well-documented, and thorough open source library 
+								</li>
+							</ul>
+						</p>
+					</section>
+					<section>
+						<h3>
+							Step 1: Make a Reality
+						</h3>
+						<p>
+					<pre><code class="hljs" data-trim contenteditable>
+// Create 3D objects.
+var geometry = new THREE.BoxGeometry(0.5, 0.5, 0.5);
+var material = new THREE.MeshNormalMaterial();
+cube = new THREE.Mesh(geometry, material);
+
+// Position cube mesh to be right in front of you.
+cube.position.set(0, controls.userHeight, -1);
+
+// Add cube mesh to your three.js scene
+scene.add(cube);
+					</code></pre>
+						</p>
+					</section>
+					<section>
+						<h3>
+							Step 2: Add lighting
+						</h3>
+						<p>
+							<pre><code class="hljs" data-trim contenteditable>
+var light = new THREE.AmbientLight( 0x404040 ); 
+scene.add( light ); 
+var light2 = new THREE.PointLight( 0xffffff, 1, 100 ); 
+light2.intensity = 1; 
+scene.add( light2 ); 
+var light3 = new THREE.DirectionalLight( 0xffffff ); 
+light3.position.set( 0, 1, 1 ).normalize(); 
+scene.add(light3); 
+					</code>
+					</pre>
+						</p>
+
+					</section>
+					<section>
+						<h3>
+							Step 3: Add some images 
+						</h3>
+						<p>
+							<pre><code class="hljs" data-trim contenteditable>
+// Tip: Use a spherical camera or your phone to capture a spherical photo
+// Add an equirectangular panorama
+var pano;
+var loader = new THREE.TextureLoader();
+loader.load('Greeley_pan_small_stars.jpg', onTextureLoaded);
+function onTextureLoaded(texture) {
+  var geometry = new THREE.SphereGeometry(1000, 32, 32);
+  var material = new THREE.MeshBasicMaterial({
+    map: texture,
+    side: THREE.BackSide
+  });
+  pano = new THREE.Mesh(geometry, material);
+  pano.position.y = 190;
+  scene.add(pano);
+}
+					</code>
+					</pre>
+						</p>
+
+					</section>
+					<section>
+						<h3>
+							Step 4: Animate Your Reality 
+						</h3>
+						<p>
+							<pre><code class="hljs" data-trim contenteditable>
+
+var lastRender = 0
+function animate (timestamp) {
+  var delta = Math.min(timestamp - lastRender, 500)
+  lastRender = timestamp
+  // Apply rotation
+  fit.rotation.y += delta * 0.0003
+  fit.rotation.x += delta * 0.00005
+  // Update VR headset position and apply to camera.
+  controls.update()
+  // Render the scene through the manager
+  manager.render(scene, camera, timestamp)
+  requestAnimationFrame(animate)
+}
+					</code>
+					</pre>
+						</p>
+
+					</section>
+
+					<section>
+						<h3>
+							Step 5: Interact with Your Reality  
+						</h3>
+						<p>
+							<pre><code class="hljs" data-trim contenteditable>
+window.addEventListener('keydown', onkey, true)
+function onkey(event) {
+  event.preventDefault()
+  if (event.keyCode == 32) {
+    // space bar
+    isRotation = !isRotation
+  }
+}
+
+document.body.addEventListener('click', onClick)
+function onClick(event) {
+  isRotation = !isRotation
+}
+var lastRender = 0
+var isRotation
+function animate (timestamp) {
+  ...
+  if (isRotation) {
+    // Apply rotation
+    fit.rotation.y += delta * 0.0003
+    fit.rotation.x += delta * 0.00005
+  }
+  ...
+}
+		</code>
+					</pre>
+						</p>
+
+					</section>
+					<section>
+						<h3>
+							DEMO
+						</h3>
+						<iframe data-src="https://webvrdemo.herokuapp.com/" width="100%" height="550" scrolling="yes" frameborder="0" marginwidth="0" marginheight="0"
+						style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>		
+					</section>
+					<section>
+						<h3>
+							More samples
+						</h3>
+						<iframe data-src="https://threejs.org/examples/#webvr_cubes" width="100%" height="550" scrolling="yes" frameborder="0" marginwidth="0" marginheight="0"
+						style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>		
+					</section>
+				</section>
+				<section>
+					<section>
+						<h3>
+							React VR: Powered by Facebook
+						</h3>
+							<small>
+							React VR > React Runtime > OVRUI > Three.js > WebVR & Browser
+							</small>
+						<iframe data-src="https://facebook.github.io/react-vr/index.html" width="100%" height="550" scrolling="yes" frameborder="0" marginwidth="0" marginheight="0"
+						style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+
+					</section>
+					<section>
+						<h3>
+							Basic steps for a ReactVR App 
+						</h3>
+						<p>
+							<ol>
+								<li>
+									Install Node.js, NPM
+								</li>
+								<Li>
+									Compatible VR Web Browser
+								</Li>
+								<li>
+									npm install -g react-vr-cli
+								</li>
+								<li>
+									react-vr init MyReactVRSample
+								</li>
+								<li>
+									npm start
+								</li>
+								<li>
+									Open your browser at <a href="http://localhost:8081/vr"> http://localhost:8081/vr </a> 
+								</li>
+							</ol>
+						</p>
+					</section>
+					<section>
+						<h3>
+							Directory Structure
+						</h3>
+					<pre><code class="hljs" data-trim contenteditable>
++-node_modules
++-static_assets
++-vr
+-.gitignore
+-.flowconfig
+-.watchmanconfig
+-index.vr.js
+-package.json
+-rn-cli-config.js
+					</code></pre>
+						</p>
+
+					</section>
+					<section>
+						<h3>
+							A more interesting sample
+						</h3>
+						<iframe data-src="https://solarvr.herokuapp.com/" width="100%" height="550" scrolling="yes" frameborder="0" marginwidth="0" marginheight="0"
+						 style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+					</section>
+					<section>
+						<h2>
+							Code behind the scene
+						</h2>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h3>
+							Forge Viewer: Powered by Autodesk
+						</h3>
+						<iframe data-src="http://lmv.rocks/" width="100%" height="550" scrolling="yes" frameborder="0" marginwidth="0" marginheight="0"
+						 style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+						
+					</section>
+					<section>
+						<h3>
+							Workflow with Autodesk Forge
+						</h3>
+							<img src="./img/api_basics.png" style="width:100%;height:100%;" />
+						
+					</section>
+					<section>
+							<h3>Over 60 different file formats </h3>
+							<img src="./img/md.png" style="width:100%;height:100%;" />
+					</section>
+					<section>
+						<h3>
+							Viewer VR code
+						</h3>
+					<pre><code class="hljs" data-trim contenteditable>
+
+  <link rel="stylesheet" href="https://developer.api.autodesk.com/viewingservice/v1/viewers/style.min.css?v=2.13" type="text/css">
+
+  <script src="https://developer.api.autodesk.com/viewingservice/v1/viewers/three.js?v=2.13"></script>
+  <script src="https://developer.api.autodesk.com/viewingservice/v1/viewers/viewer3D.js?v=2.13"></script>
+
+  <div id="MyViewerDiv"></div>
+					</code></pre>
+					<pre><code class="hljs" data-trim contenteditable>
+
+var myViewerDiv = document.getElementById('MyViewerDiv');
+var viewer = new Autodesk.Viewing.Private.GuiViewer3D(myViewerDiv);
+var options = {
+	'env' : 'Local',
+	'document' : './shaver/0.svf'
+};
+Autodesk.Viewing.Initializer(options, function() {
+viewer.initialize();
+viewer.loadModel(options.document, options);
+viewer.loadExtension('Autodesk.Viewing.WebVR');
+});
+
+						</code></pre>
+					</section>
+					<section>
+						<iframe data-src="https://viewervr.herokuapp.com" width="100%" height="700" scrolling="yes" frameborder="0" marginwidth="0" marginheight="0"
+						 style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+						
+					</section>
+					<section>
+						<h2>
+							Demo
+						</h2>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>
+							Don't want code?
+						</h2>
+					</section>
+					<section>
+						<h3>
+							SocialVR
+						</h3>
+						<iframe data-src="http://cmuartfab.github.io/social-vr/#/editor" width="100%" height="550" scrolling="yes" frameborder="0" marginwidth="0" marginheight="0"
+						 style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+					</section>
+					<section>
+						<h3>
+							ThreeJS Editor
+						</h3>
+						<iframe data-src="https://threejs.org/editor/" width="100%" height="550" scrolling="yes" frameborder="0" marginwidth="0" marginheight="0"
+						 style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+					</section>
+					<section>
+						<h3>
+							Autodesk Play
+						</h3>
+						<iframe data-src="https://play.autodesk.com" width="100%" height="550" scrolling="yes" frameborder="0" marginwidth="0" marginheight="0"
+						 style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+					</section>
+					<section>
+						<h3>
+							vizor
+						</h3>
+						<iframe data-src="https://vizor.io/" width="100%" height="550" scrolling="yes" frameborder="0" marginwidth="0" marginheight="0"
+						 style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+					</section>
+					<section>
+						<h3>
+							Sketchfab Editor
+						</h3>
+						<iframe data-src="https://help.sketchfab.com/hc/en-us/articles/211640363-VR-Editor/" width="100%" height="550" scrolling="yes" frameborder="0" marginwidth="0" marginheight="0"
+						 style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+					</section>
+				</section>
+				<section>
+					<h3> Resource
+					</h3>
+					<p>
+						<ul>
+							<li>
+								WebVR Info:   <a href="https://webvr.info" >https://webvr.info </a>
+							</li>
+							<li>
+								Create WebVR: <a href="https://createwebvr.com" >https://createwebvr.com </a>
+							</li>
+							<li>
+								WebVR Rocks:  <a href="https://webvr.rocks/">https://webvr.rocks</a>
+							</li>
+							<li>
+								ThreeJS:      <a href="https://threejs.org">https://threejs.org</a>
+							</li>
+							<li>
+								React VR:     <a href="https://facebook.github.io/react-vr/index.html" >https://facebook.github.io/react-vr/ </a>
+							</li>
+							<li>
+								Autodesk Forge Viewer: <a href="https://developer.autodesk.com" >https://developer.autodesk.com </a>
+							</li>
+							<li>
+								WebVR Slack  @<a href="https://webvr.slack.com" >https://webvr.slack.com</a>
+							</li>
+						</ul>
+					</p>
+				</section>
+				<section>
+					<h1> Thanks
+					</h1>
+				</section>
+				
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
